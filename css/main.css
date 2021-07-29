@@ -1,0 +1,345 @@
+body{
+    padding: 0;
+    margin:0;
+}
+
+
+
+
+.header{
+    height: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1.6% 7% 0.7% 7%;
+    box-shadow: -0.2px -0.2px 5px  rgb(177, 177, 180);
+}
+.logo{
+    padding: 100px auto;
+}
+.menu{
+    vertical-align: bottom;
+    margin: 0px;
+    padding-top: 10px;
+}
+.menulink{
+    text-transform: uppercase;
+    padding: 5px 0px 0px 0px;
+    margin: 0 20px 0px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color:  rgb(5, 5, 5);
+  }
+
+.menulink:hover{
+    border-radius:15px;
+    color: rgba(0, 128, 255, 1);
+    transition: all 0.5s ease;
+  }
+.apptlink{
+    background-color: rgba(0, 128, 255, 1);
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.mobilemenu{
+    display: none;
+  }
+.mobilemenulinks{
+    display: none; 
+    padding: 10px;
+    opacity: 0;
+}
+.open{
+    display:block;
+    opacity: 1;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:50px;
+    background-color: white;
+    transition: all 1s ease;
+}
+.mobilemenulinks a{
+    display:block;
+    text-transform: uppercase;
+    padding: 5px 0px 0px 0px;
+    margin: 0 20px 0px 0px;
+    text-decoration: none;
+    font-weight: 700;
+    color:  rgb(5, 5, 5);
+    border-bottom: 0.1px solid rgba(150, 150, 150, 0.1);
+}
+.mobileapptlink{
+    border: none;
+}
+.mobilemenu button{
+    border:none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.headbody{
+    background-image: url('../media/background.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    margin:0;
+    height:100%;
+    text-align: center;
+}
+.content{
+    height: 50% ;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: white;
+}
+.content h1{
+    font-size:35px  ;
+    font-weight: 600  ;
+    padding: 50px 0 0 0;
+}
+.content h3{
+   font-size:24px  ;
+   font-weight: 500  ;
+   padding: 10px;
+}
+.content a{
+  padding: 10px 20px 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  color:white;
+  font-size: 15px;
+  background-color: rgba(7,132,181);
+  text-decoration: none;
+  box-shadow: -0.2px -0.2px 4px  rgb(100, 100, 100);
+  font-weight: 700;
+}
+.content a:hover {
+    background-color: rgba(27,152,201);
+  }
+
+
+
+
+
+
+
+
+.benefits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1.6% 7% 0.7% 7%;
+    color: white;
+    background-color: rgba(7,132,181);
+    margin: 0;
+}
+.benefits div{
+    text-align: center;
+    padding: 1.6%;
+    justify-self: center;
+}
+.benefits div img {
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+
+
+.services {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10% 7% 0.7% 7%;
+    margin: 0;
+    text-align: center;
+}
+.services h3{
+    width: 250px;
+    font-size: 28px;
+    font-weight: bolder;
+    border-bottom: 2px solid rgba(7,132,181);
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+.services p{
+    font-size: 22px;
+    padding: 15px;
+    margin: 10px auto;
+}
+.services .servicectn{
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6%;
+    margin-top: 10px;
+}
+.service {
+    width: 250px;
+    height: 250px;
+    color: white;
+    margin: 20px;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.service h4{
+    font-size: 25px;
+    font-weight:700 ;
+    
+}
+.servicebg{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    margin:0;
+    height:100%;
+    text-align: center;
+}
+   .sur{
+    background-image: url('../media/service.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .opt{
+     background-image: url('../media/service.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .psy{
+         background-image: url('../media/service.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .ped{
+         background-image: url('../media/service.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .ort{
+        background-image: url('../media/service.jpg');
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .obs{
+        background-image: url('../media/service.jpg');
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.service:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.testimonials{
+    font-family: 'Quicksand', sans-serif;
+    padding: 1% 7% 4% 7%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(7,132,181);
+}
+.testimonial{
+    display: block;
+}
+.testimony{
+    font-size: 22px;
+}
+.testimonial img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.cta{
+    font-family: 'Quicksand', sans-serif;
+    padding: 10% 7% 0.7% 7%;
+    margin: 0;
+    text-align: center;
+}
+.cta p{
+    font-size: 22px;
+}
+.cta button{
+  padding: 10px 20px 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  color:white;
+  font-size: 15px;
+  background-color: rgba(7,132,181);
+  outline:none;
+  border:none;
+  box-shadow: -0.2px -0.2px 2px  rgb(100, 100, 100);
+  font-family: 'Quicksand', sans-serif;
+}
+.cta button:hover{
+    background-color: rgba(27,152,201);
+  }
+
+
+
+
+
+.footer{
+    padding: 5% 10% 0.7% 10%;
+    margin: 0;
+    margin-top: 10%;
+    background-color: rgb(80, 80, 80);
+}
+.footerlinks{
+    text-align: justify;
+    display:inline-block;
+    flex-wrap: nowrap;
+}
+.footerlink{
+    font-size:14px;
+    padding:10px;
+    color:white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.footnote{
+    text-align:center;
+    font-size:12px;
+    padding: 10px 0px 0px 0px;
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+    display:block;
+}
+
+
+@media screen and (max-width:600px){
+    .menu{
+        display: none;
+    }
+    .mobilemenu{
+        display:block;
+    }
+}
