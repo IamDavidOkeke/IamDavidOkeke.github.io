@@ -4,17 +4,25 @@ body{
     height: 100vh;
 }
 
-
+*{
+    box-sizing: border-box;
+}
 #root{
-   position: absolute;
    opacity: 0.8;
    margin: 0;
    width: 100%;
+   max-width: 100%;
    padding: 0;
+  position: absolute;
+  z-index: 100;
 }
 canvas{
+    opacity: 0.8;
     display: block;
-   margin: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .header{
     height: 100%;
@@ -163,12 +171,13 @@ canvas{
 .benefits div{
     text-align: center;
     padding: 1.6%;
+    padding-top: 0;
     justify-self: center;
 }
 .benefits div img {
-    width: 50px;
-    height: 50px;
-    color: white;
+    width: calc(3vw + .8rem);
+    height: auto;
+    object-fit: cover;
 }
 
 
