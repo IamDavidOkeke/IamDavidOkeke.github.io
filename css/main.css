@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin:0;
@@ -89,7 +92,7 @@ canvas{
 .mobilemenulinks a{
     display:block;
     text-transform: uppercase;
-    padding: 5px 0px 0px 0px;
+    padding: 1em;
     margin: 0 20px 0px 0px;
     text-decoration: none;
     font-weight: 700;
@@ -185,6 +188,9 @@ canvas{
     height: auto;
     object-fit: cover;
 }
+.benefits div p{
+    margin: 0;
+}
 
 
 
@@ -192,7 +198,7 @@ canvas{
     font-family: 'Quicksand', sans-serif;
     padding: 10% 7% 0.7% 7%;
     margin: 0;
-    text-align: justify;
+    
 }
 .services h3{
     font-size: 1.5rem;
@@ -202,7 +208,7 @@ canvas{
     margin: 0 auto;
 }
 .services p{
-    font-size: 1rem;
+    font-size: .8rem;
     padding: .8em;
     margin: .5em auto;
 }
@@ -211,7 +217,9 @@ canvas{
     color:rgba(7,132,181);
     margin: .5rem;
 }
-
+.animate{
+    animation: enter 0.5s ease-in ;
+}
 
 
 
@@ -257,7 +265,7 @@ canvas{
     text-align: center;
 }
 .footerlinks{
-    text-align: justify;
+    text-align: center;
     display:inline-block;
 }
 .footerlink{
@@ -295,5 +303,16 @@ canvas{
     margin: 0;
     cursor: pointer;
      box-sizing: border-box;
+    }
+}
+
+@keyframes enter {
+    0%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
     }
 }

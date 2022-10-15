@@ -8,17 +8,24 @@ var skills = document.querySelector('.skills');
 
 button.addEventListener('click', function(){mobilemenulinks.classList.toggle('open');
 })
+const set = (value)=>{
+    template.innerHTML = value
+    template.classList.add('animate')
+    setTimeout(function(){
+        template.classList.remove('animate')
+    }, 500)
+}
 experience.addEventListener('click', function(){
-    template.innerHTML = templates.experience
+    set(templates.experience)
 })
 projects.addEventListener('click', function(){
-    template.innerHTML = templates.projects
+    set(templates.projects)
 })
 education.addEventListener('click', function(){
-    template.innerHTML = templates.education
+    set(templates.education)
 })
 skills.addEventListener('click', function(){
-    template.innerHTML = templates.skills
+    set(templates.skills)
 })
 
 const templates ={ 
