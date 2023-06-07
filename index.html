@@ -9,7 +9,7 @@
       name="description"
       content="Get access to the latest local Medical slides and materials to Ubemsites for easy preparation of subjects and other helpfull stuff"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Quicksand&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Atkinson+Hyperlegible:wght@400;700&family=Quicksand&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <title>David Okeke's Portfolio</title>
   </head>
@@ -57,7 +57,7 @@
             <p>Experience</p>
           </div>
           <div class='projects'>
-            <img src='./media/freelance.png' />
+            <img src='./media/freelance1.png' />
             <p>Projects</p>
           </div>
           <div class='education'>
@@ -74,7 +74,6 @@
 
         <div class='services'>
           <div class ='template'>
-            <h3>Frontend Developer</h3><p>SASTA: Society for the Advancement of Science and Technology in the Arab World.</p><p>Mar 2022 - Present (8 months +)</p><ul><li> Spearheading the development of the visual display of components in HTML/CSS/Javascript for useas component for incorporation into web pages or other contexts.</li><li>Developing and implementing highly-responsive user interface components using React.</li><li>Monitoring and improving front-end performance.</li></ul><h3>Frontend React Developer</h3><p>One Community Global</p><p>Jan 2022 - Feb 2022 (2 months)</p><ul><li> Advanced the capabilities of our front end web application with React</li><li>Implemented state management with Redux</li><li>Help breakdown complex work into deliverables working closely with cross-functional team members</li></ul>
           </div>
         </div>
 
@@ -109,52 +108,8 @@
 
 
     </div>
-    <script src='./scripts/main.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js'></script>
-    <script>
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000)
-
-      const renderer = new THREE.WebGLRenderer({
-        antialias: true
-      });
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setClearColor('#eeeeee');
-      renderer.render(scene, camera);
-
-      const geometry = new THREE.BoxGeometry(1,1,1);
-      const material = new THREE.MeshLambertMaterial({color:0x0784b5});
-      var light1 = new THREE.PointLight( 0xffffff, 1, 500);
-      light1.position.set(10, 0, 25)
-				scene.add( light1 );
     
-     
-        var cube1 = new THREE.Mesh( geometry, material );
-       cube1.position.x = 0
-       cube1.position.y = 0 
-       cube1.position.z = (Math.random() - 0.5) 
-        scene.add( cube1 );
-      
-
-      camera.position.z = 5
-      document.body.appendChild(renderer.domElement);
-      function animate() {
-        requestAnimationFrame( animate );
-        renderer.render( scene, camera );
-        
-          cube1.rotation.x += 0.01
-          cube1.rotation.y += 0.01
-      }
-      window.addEventListener('resize', function(){
-          renderer.setSize( window.innerWidth, window.innerHeight)
-          camera.aspect = window.innerWidth / window.innerHeight
-          document.querySelector('#root').style.width = window.innerWidth + 'px'
-          document.querySelector('.header').style.height = window.innerHeight + 'px'
-          camera.updateProjectionMatrix()
-      })
-
-      animate();
-    </script>
+    
+    <script src='./scripts/main.js'></script>
   </body>
 </html>
