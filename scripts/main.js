@@ -54,9 +54,34 @@ const templates ={
     education: 
     `<h3>JavaScript Data Structures and Algorithms</h3><h4>freeCodeCamp</h4><h6>2020 - 2021</h6><h3>Full Stack Web Development</h3><h4>Udemy</h4><h6>2019 - 2020</h6><h3>Fundamentals of Digital Marketing</h3><h4>Google Digital Garage</h4><h6>2020 - 2020</h6>`,
     projects:
-     `<h3>React UI Library</h3><a href="https://github.com/IamDavidOkeke/AutocompleteOption">Project link</a><p>I created a react component library that autocomplete search options.</p><p>I built the search logic using the prefix tree data structure tooptimise performance and react jsx for the user interface.</p><h3>E-learning App</h3><a href="https://materials-for-ubemsa.web.app">Project link</a><p>Technologies used: HTML | CSS | JavaScript | Reactjs | Nodejs | MongoDb</p><p> Description: Built a Full stack progressive web app that delivers educational materials to students in my university </p><h3>Order app</h3><a href="https://liteexports.com">Project link</a><p>Technologies used: HTML | CSS | JavaScript | Nodejs | Google API</p><p>Description: Built a nodejs app for an export business and integrated the Google spreadsheet api to store order details of customers.</p>`
-
+    `
+    <div class='projects-container'>
+     <div>
+        <h3>React UI Library</h3>
+        <a href="https://github.com/IamDavidOkeke/AutocompleteOption">Project link</a>
+        <p>I created a react component library that autocomplete search options.</p>
+        <p>I built the search logic using the prefix tree data structure tooptimise performance and react jsx for the user interface.</p>
+     </div>
+     <div>
+        <h3>File Download/Upload App</h3>
+        <a href="https://materials-for-ubemsa.web.app">Project link</a>
+        <p>Technologies used: HTML | CSS | JavaScript | Reactjs | Nodejs | MongoDb</p>
+        <p> Description: Built a Full stack progressive web app that delivers educational materials to students in my university </p>
+     </div>
+     <div>
+        <h3>Order app</h3>
+        <a href="https://liteexports.com">Project link</a>
+        <p>Technologies used: HTML | CSS | JavaScript | Nodejs | Google API</p>
+        <p>Description: Built a nodejs app for an export business and integrated the Google spreadsheet api to store order details of customers.</p>
+     </div>
+     <div>
+        <h3>Order app</h3>
+        <a href="https://liteexports.com">Project link</a>
+        <p>Technologies used: HTML | CSS | JavaScript | Nodejs | Google API</p>
+        <p>Description: Built a nodejs app for an export business and integrated the Google spreadsheet api to store order details of customers.</p>
+     </div>
+    </div>`
 }
 window.addEventListener('load', ()=>{
-    set(templates.experience)
+    set(templates.projects)
 })
