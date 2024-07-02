@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="my portfolio website submission for hng task 1" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Atkinson+Hyperlegible:wght@400;700&family=Quicksand&family=Source+Sans+Pro:wght@600&display=swap"
+    rel="stylesheet">
+  <link href="./css/header.css" rel="stylesheet">
+  <link href="./css/body.css" rel="stylesheet">
+  <link href="./css/mediaquery.css" rel="stylesheet">
+  <title>David Okeke's Portfolio</title>
+</head>
+
+<body>
+  <div id="root">
+    <div class='header'>
+      <nav class='nav'>
+        <div class='logo'>
+          <h2 height='40px' width='40px'>David Okeke</h2>
+        </div>
+        <div class='menu'>
+          <a class='menulink' href='/'>Home</a>
+          <a class='menulink' href='#contact'>Contact</a>
+          <a class='menulink' href='https://frontendokeke.hashnode.dev'>Blog</a>
+          <a class='menulink' href='./resume.pdf'>Resume</a>
+        </div>
+        <div class='mobilemenu'>
+          <div class='mobileicon'>
+            <button> &#9776;</button>
+          </div>
+          <div class='mobilemenulinks'>
+            <a class='mobilemenulink' href='/'>Home</a>
+            <a class='mobilemenulink' href='#contact'>Contact</a>
+            <a class='mobilemenulink' href='https://frontendokeke.hashnode.dev'>Blog</a>
+            <a class='mobilemenulink' href='./resume.pdf'>Resume</a>
+          </div>
+        </div>
+      </nav>
+      <div class='headbody'>
+        <div class='container'>
+          <div class='content'>
+            <h1 class=''>Hi, I'm David</h1>
+            <h3 class=''>Front end Developer | React js</h3>
+          </div>
+        </div>
+        <img data-testid="slackProfilePicture" src='./media/profile-picture-mobile.jpg' />
+      </div>
+    </div>
+
+    <article>
+      <main>
+        <section>
+          <h2>Tech goals for next two years</h2>
+          <p>My tech goals for the next two years largely include:</p>
+          <ol>
+            <li>Getting a job in a small startup where I can have a wide range of responsibilitees which will help me fastrack my learning process and build a network.</li>
+            <li> Building useful mini projects that could help me passively earn income</li>
+            <li> Learning infrastructural and architectural software development. Things like database creation, kernel development, game engine development etc</li>
+          </ol>
+
+        <section>
+          <h2>Projects</h2>
+          <div>
+            <h4>React UI Library</h4>
+            <p>I created a react component library that autocomplete search options. I built the search logic using the prefix tree data structure to learn how to optimise performance and react jsx for the user interface. View  <a href="https://github.com/IamDavidOkeke/AutocompleteOption">here</a></p>
+          </div>
+          <div>
+            <h4>File Download/Upload App</h4>
+            <a href="https://materials-for-ubemsa.web.app">Project link</a>
+            <p>Technologies used: HTML | CSS | JavaScript | Reactjs | Nodejs | MongoDb</p>
+            <p> Description: Built a Full stack progressive web app that delivers educational materials to students in
+              my university </p>
+          </div>
+          <div>
+            <h4>Order app</h4>
+            <a href="https://liteexports.com">Project link</a>
+            <p>Technologies used: HTML | CSS | JavaScript | Nodejs | Google API</p>
+            <p>Description: Built a nodejs app for an export business and integrated the Google spreadsheet api to store
+              order details of customers.</p>
+          </div>
+        </section>
+      </main>
+      <aside>
+        <section>
+          <h3>Skills</h3>
+          <ul class="list-none p-0">
+            <li>Front end Development</li>
+            <li>Responsive Web Design</li>
+            <li>Data Structures and Algorithms</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Languages/Technologies</h3>
+          <p> HTML • CSS • JavaScript  • Node.js • React.js  • MongoDB  • SQL 
+            </p>
+        </section>
+        <section>
+          <h3>Certifications</h3>
+          <div>
+            <b>JavaScript Data Structures and Algorithms</b><br/>
+            <small>freeCodeCamp</small>
+            <small>2020 - 2021</small>
+          </div>
+          <br/>
+          <div>
+            <b>Full Stack Web Development</b><br/>
+            <small>Udemy</small>
+            <small>2019 - 2020</small>
+          </div>
+          <br/>
+          <div>
+            <b>Fundamentals of Digital Marketing</b><br/>
+            <small>Google Digital Garage</small>
+            <small>2020 - 2020</small>
+          </div>
+        </section>
+        <section>
+          <h3>Required Hng Elements</h3>
+          <ol class=" p-0">
+            <li data-testid="slackDisplayName">Slack name: David Okeke</li>
+            <li data-testid="slackEmail">Slack email: <a href="mailto:iamdavonokeke@gmail.com">iamdavonokeke@gmail.com</a> </li>
+            <li data-testid="currentTimeUTC" id="currentTimeUTC"></li>
+            <li data-testid="currentDay" id="currentDay"></li>
+            <li ><a data-testid="hngLink" target="_blank" href="https://hng.tech/learn">hng.tech/learn</a></li>
+            <li ><a data-testid="keywordLink" target="_blank" href="https://keyword.dog">keyword.dog</a></li>
+            <li ><a data-testid="scrapeanywebLink" target="_blank" href="https://scrapeanyweb.site">scrapeanyweb.site</a></li>
+          </ol>
+        </section>
+      </aside>
+
+    </article>
+
+
+
+
+    <div class='cta' id="contact">
+      <p>Contact Me</p>
+      <a href="mailto:iamdavonokeke@gmail.com" class='btn'>Contact Me</a>
+    </div>
+
+
+
+
+
+    <div class='footer'>
+      <div class='footerlinks'>
+        <a class='footerlink' href='/'>Home</a>
+        <a class='footerlink' href='https://frontendokeke.hashnode.dev'>Blog</a>
+        <a class='footerlink' href='https://linkedin.com/in/iamdavidokeke'>LinkedIn</a>
+        <a class='footerlink' href='mailto:iamdavonokeke@gmail.com'>Mail</a>
+        <a class='footerlink' href='https://github.com/iamdavidokeke'>Github</a>
+      </div>
+      <p class='footnote'>David Okeke 2024</p>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  <script>
+    var mobilemenulinks = document.querySelector('.mobilemenulinks');
+    var button = document.querySelector('.mobileicon');
+    var currentTimeUTC = document.querySelector('#currentTimeUTC');
+    var currentDay = document.querySelector('#currentDay');
+
+    button.addEventListener('click', function(){mobilemenulinks.classList.toggle('open');
+    })
+    let currentTime = new Date(Date.now())
+    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    currentTimeUTC.innerHTML = `current time in UTC is ${currentTime.toUTCString()}`
+    currentDay.innerHTML = `current day is ${days[currentTime.getUTCDate()]}`
+  </script>
+</body>
+
+</html>
