@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Roboto Serif", serif !important;
+}
+.roboto{
+  font-family: "Roboto Serif", serif;
+}
+a{
+  text-decoration: none;
+}
+.p-bg{
+  background-color: #0d6efd
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.logoo{
+  width: 20rem !important;
+}
+@media (max-width: 900px) {
+  .logoo{
+    width: 10rem !important;
+  }
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+.read-the-docs {
+  color: #888;
+}
+.flex{
+  display: flex;
+}
+.no-wrap{
+  flex-wrap: nowrap;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.list-style-none{
+  list-style-type: none ;
+}
+.mr-auto{
+  margin-right: auto;
+}
+.w-50{
+  width: 50%;
+}
+.w-100{
+  width:100%;
+}
+.h-100{
+  height: 100%;
+}
+.w-80{
+  width: 80%;
+}
+.desk-none{
+  display: none;
+}
+.show{
+  display: none;
+}
+.align-content-center{
+  align-content: center;
+}
+@media (max-width: 900px) {
+  .desk-none {
+    display: block;
+  }
+  .mobile-none{
+    display: none;
+  }
+}
+.white-no-wrap{
+  white-space: nowrap;
+}
+.mw-1080{
+  max-width: 1080px;
+}
+.min-vh-100{
+  min-height: 100vh;
+}
+.black{
+  color: black;
+}
+.bg-black{
+  background-color: black;
+}
+.dark-shade{
+  background-color: rgba(10, 10, 10, 0.3)
+}
+.darker-shade{
+  background-color: rgba(10, 10, 10, 0.6)
+}
+.bg-default{
+  background-position: center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.rec-1{
+  height: 90vh;
+  background-image: url('../image/solitude-farms-cover.jpg');
+  background-position: top;
+}
+@media (max-width: 600px) {
+  .rec-1{
+    height: 70vh;
+    background-position: right ;
+  }
+}
+.rec-2{
+  background-image: url('../image/IMG-20240429-WA0026.jpg');
+}
+.rec-3{
+  min-height: 50vh;
+  background-image: url('../image/markus-winkler-HeqXGxnsnX4-unsplash.jpg');
+}
+.rec-4{
+  min-height: 50vh;
+  background-image: url('../image/gabriel-jimenez-jin4W1HqgL4-unsplash.jpg');
+}
+.rec-5{
+  min-height: 50vh;
+  background-image:  url('../image/markus-spiske-ZSZ6wzNU12Q-unsplash.jpg');
+}
+.rec-6{
+  min-height: 50vh;
+  background-image:  url('../image/andrej-lisakov-zYUn4R37o_U-unsplash\ \(1\).jpg');
+}
+.rec-7{
+
+  background-color: #e7e7e7;
+}
+.b-gradient{
+  background-image: linear-gradient(135deg, rgba(216, 53, 56, 0.53) 22%, rgba(0, 210, 211, 0.41) 76%);
+}
+.grid{
+  display: grid;
+}
+.two-col{
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 600px) {
+  .two-col{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .mobile-order-1{
+    order: 1;
+  }
+  .mobile-order-0{
+    order: 0;
+  }
+}
+.mw-350{
+  max-width: 350px;
+}
+.mw-810{
+  max-width: 810px;
+}
+@media (max-width: 900px) {
+ .mobile-center{
+  margin: 2em auto;
+ }
+ .mobile-text-center{
+  text-align: center;
+ }
+}
+.three-col{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 900px) {
+  .three-col{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+.gap-2{
+  gap:2em
+}
+.gap-4{
+  gap:4em
+}
+.gap-8{
+  gap:8em
+}
+.justify-self-end{
+  justify-self: end;
+}
+.align-self-center{
+  align-self: center;
+}
+.justify-items-center{
+  justify-items: center;
+}
+.mw-540{
+  max-width: 540px;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.r-img{
+  width: 5rem;
+  height: auto;
+}
+.white{
+  color: white !important;
+}
+.bg-white{
+  background-color: white;
+}
+.font-weight-bold{
+  font-weight: bold !important;
+}
+.text-justify{
+  text-align: justify;
+}
+.member-card{
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: none !important;
+}
+.gallery {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .gallery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+  }
+}
+.gallery-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.hide{
+  display: none;
+}
+.my-modal {
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.my-modal-content {
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.rec-x{
+  justify-items: end;
+}
+@media (max-width: 900px) {
+  .rec-x{
+    justify-items: start;
+  }
+}
+.three-col-600{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 600px) {
+  .three-col-600{
+    grid-template-columns: 1fr ;
+  }
+}
+.bg-0{
+  background: none;
+}
+.border-0{
+  border: none;
+}
+.w-28{
+  width: 28px;
+}
+.w-16{
+  width: 16px;
+}
+.h-28{
+  height: 28px;
+}
+.h-16{
+  height: 16px;
+}
+.rec-8{
+  background-color: #2c2c2c;
+}
+.absolute{
+  position: absolute;
+}
+.card-image-fix{
+  width: 4rem;
+  margin: 0 auto;
+}

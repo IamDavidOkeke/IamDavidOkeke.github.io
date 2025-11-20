@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cridgeAI Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="vh-100 bg-black body">
+    <div class="mobile-header fixed h-100 bg-black white">
+        <div class="flex align-center sp-btw  bg-black p-3">
+            <div><img class="py-0" src="./assets/RDG-Logo.png" /></div>
+            <button id="navbtn-x" class="navbtn white display-1 h1"><h1 class="navbtn white display-1 h1">x</h1></button>
+        </div>
+        <div class="p-3 bg-black">
+            <div class="">
+                <p class="mx-auto mt-4"><a class="font-weight-bold white" href="#">Home</a></p>
+                <p class="mx-auto mt-4"><a class="font-weight-bold white" href="#">Stake</a></p>
+                <p class="mx-auto mt-4 btn btn-rounded p-bg btn-lg px-3 ml-4 font-boldest"><a class="black" href="#">Take action</a></p>
+            </div>
+        </div>
+    </div>
+    <header class="shadow p-3 bg-black white">
+        <div class="flex align-center sp-btw mw-1080">
+            <div><img class="py-0" src="./assets/RDG-Logo.png" /></div>
+            <div class="flex sp-btw m-none align-center">
+                <a class="px-3 font-weight-bold white" href="#">Home</a>
+                <a class="px-3 font-weight-bold white ml-4 " href="#">Stake</a>
+                <a class="btn  btn-rounded p-bg btn-lg px-3 ml-4 font-boldest" href="#">Take action</a>           
+            </div>
+            <div class="none">
+                <button id="navbtn" class="navbtn white">&#9776;</button>
+            </div>
+        </div>
+    </header>
+    <section class="p-3 bg-black white">
+        <section class="grid column-2">
+            <div class="mw-540 rec-540 pt-5">
+                <img src="./assets/coming-soon.png" class="f-img" />
+                <h3 class="font-weight-bold p-color display-3">Coming soon</h3>
+                <p>So much to come from us <br/>so watch this space!</p>
+                <a class="btn  btn-rounded p-bg btn-lg px-4 font-boldest" href="./index.html">Home</a>
+            </div>
+            <div>
+                <img src="./assets/Character.png" class="f-img" />
+            </div>
+        </section>
+    </section>
+    <footer class="bg-black text-center ">
+        <small class=" white text-center mw-1080 mx-auto">@ Cridgeai. All rights reserved</small>
+    </footer>
+    <script >
+        const navbtn = document.getElementById('navbtn')
+        const navbtn_x = document.getElementById('navbtn-x')
+        const mobileHeader = document.querySelector('.mobile-header')
+        navbtn.addEventListener('click', ()=>{
+            mobileHeader.classList.remove('mobile-header')
+        })
+        navbtn_x.addEventListener('click', ()=>{
+            mobileHeader.classList.add('mobile-header')
+        })
+    </script>
+  </body>
+</html>

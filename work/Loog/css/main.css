@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.otf') ,
+          ;
+  }
+  @font-face {
+    font-family: 'Gilroy-bold';
+    src: url('../fonts/Gilroy-ExtraBold.otf') ,
+          ;
+  }
+*{
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Gilroy-bold', sans-serif;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.align-base{
+    align-items: baseline;
+}
+.mw-1080{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.mw-500{
+    max-width: 400px;
+    padding: 1em;
+    margin: 0 auto;
+}
+ .flex > .rec-1{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 400px;
+} 
+.p-bg{
+    background: #00226D;
+}
+.p-color{
+   color: #00226D;
+}
+.p-outline{
+    outline: 1px solid #00226D;
+ }
+.s-bg{
+    background: #007F80;
+}
+.s-color{
+   color: #007F80;
+}
+.q-bg{
+    background-color: #272A6E;
+}
+.row-reverse{
+    flex-direction: row-revers;
+}
+.white{
+    color:white
+}
+.nowrap{
+    flex-wrap:nowrap;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.bg-black{
+    background-color: black;
+}
+.t-bg{
+    background-color: #5C0601;
+}
+.t-color{
+    color: #5C0601;
+}
+.links{
+    padding-top: 3em;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    font-weight: 300;
+    
+}
+.sp-btw{
+    justify-content: space-between;
+}
+.cta{
+
+    background-color: rgb(253, 253, 253);
+    box-shadow: 1px 1px #e2e2e2;
+}
+.mt--5{
+    margin-top: -5rem;
+}
+.f-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.h-img{
+    max-width: 45%;
+    height: auto;
+}
+.span-ctn span{
+    display: inline-block;
+    padding: 1em auto;
+    margin: 1em;
+}
+.flex-center{
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+}
+.l-s-t{
+    list-style-type: circle;
+}
+.black{
+    color: black;
+}
+.shadow{
+    box-shadow: 0px 5px 5px 0px rgba(117,115,115,0.75);
+-webkit-box-shadow: 2px 6px 5px 0px rgba(117,115,115,0.75);
+-moz-box-shadow: 2px 6px 5px 0px rgba(117,115,115,0.75);
+}
+.navbtn{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 24px;
+}
+.none{
+    display: none;
+}
+.mobile-header{
+    display: none;
+}
+.h-100{
+    height: 100%;
+    width: 100%;
+}
+.fixed{
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+}
+.s-links a{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-weight: 400;
+    
+}
+.extra-pr-5{
+    padding-right: 1rem;
+}
+.font-boldest{
+    font-weight: 900;
+}
+.grid{
+    display: grid;
+}
+.rec-2{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2em;
+}
+.rec-3{
+    background-image: url('../images/Group\ 32.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rec-4{
+    grid-template-columns: 1fr 1fr;
+}
+.rec-5{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.rec-7{
+    overflow: scroll;
+    gap:3em;
+}
+.rec-7 > div{
+    min-width: 70%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+.rounded{
+    border-radius: 30px !important;
+}
+.round{
+    border-radius: 10px !important;
+}
+.rec-8{
+    background-image: url('../images/rec-8.png');
+}
+.rec-9{
+    background-image: url('../images/rec-9.png');
+}
+.rec-10{
+    background-image: url('../images/rec-10.png');
+}
+
+@media only screen and (max-width: 700px) {
+    .rec-4{
+        grid-template-columns: 1fr;
+    }
+    .rec-2{
+        grid-template-columns: 1fr 1fr;
+        gap:.5em;
+    }
+    .none {
+      display: block;
+    }
+    .m-none{
+        display: none;
+    }
+    .m-text-center{
+        text-align: center;
+    }
+    .flex > section {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    text-align: center;
+    }
+    .extra-pr-5{
+        padding-right: 0;
+    }
+}
+.rotate-left{
+    transform: rotate(-10deg);
+}
+.rotate-right{
+    transform: rotate(10deg);
+}
+.relative{
+    position: relative;
+}
+.left{
+    bottom: -50px;
+    left:50px;
+}
+.right{
+    bottom: -50px;
+    left:-50px
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="my portfolio website submission for hng task 1" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Atkinson+Hyperlegible:wght@400;700&family=Quicksand&family=Source+Sans+Pro:wght@600&display=swap"
+    rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <title>David Okeke's Portfolio</title>
+</head>
+
+<body>
+  <div id="root">
+      <nav class='p-4 pri-bg white' >
+        <div class='mw-1080 mx-auto flex justify-content-between align-items-center gap-3' >
+          <div class='logo '>
+            <h2 height='40px' width='40px'>David Okeke</h2>
+          </div>
+          <div class=' flex justify-content-between gap-5 mobile-hide'>
+            <a class='white bold' href='/'>Home</a>
+            <a class='white bold' href='#contact'>Contact</a>
+            <a class='white bold' href='https://frontendokeke.hashnode.dev'>Blog</a>
+            <a class='white bold' href='./resume.pdf'>Resume</a>
+          </div>
+          <div class='desk-hide'>
+            <div class='menu'>
+              <button onclick="openMobileMenu()" class='menu white'> &#9776;</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class='hide' id="mobile-menu">
+        <a class='block black p-4 bb' href='/'>Home</a>
+        <a class='block black p-4 bb' href='#contact'>Contact</a>
+        <a class='block black p-4 bb' href='https://frontendokeke.hashnode.dev'>Blog</a>
+        <a class='block black p-4 bb' href='./resume.pdf'>Resume</a>
+      </div>
+      <div class='py-5'>
+        <div class="mw-1080 mx-auto custom-1 text-center flex justify-content-center align-items-center white">
+          <div class=''>
+              <h1 class=''>Hi, I'm David</h1>
+              <h3 class=''>Front end Developer | React js</h3>
+          </div>
+        </div>
+      </div>
+      <main>
+        <section class="px-3">
+          <section class="mw-1080 mx-auto">
+            <h2 class="mb-4 pb-2 underline">WORKS</h2>
+            <div class="grid two-col gap-5">
+              <div class="px-3 pt-3 custom-2">
+                <img src = './media/Screenshot (185).png' />
+                <div class="pt-3">
+                  <p> 
+                    <b>Loog Bank</b><br/>I built the landing page for a digital bank app that was coming soon<br/>
+                    <a href="./work/Loog/index.html">view template</a>
+                  </p>
+                </div>
+              </div>
+              <div class="px-3 pt-3 custom-2">
+                <img src = './media/Screenshot (187).png' />
+                <div class="pt-3">
+                  <p>
+                    <b>White Swan Consult</b><br/>
+                    I built the landing page for a Consulting Firm located in Lagos, Nigeria <br/>
+                    <a href="./work/whiteswanconsult/index.html">view template</a>
+                  </p>
+                </div>
+              </div>
+              <div class="px-3 pt-3 custom-2">
+                <img src = './media/Screenshot (188).png' />
+                <div class="pt-3">
+                  <p>
+                    <b>Versal Booking</b><br/>
+                    I built the booking and confirmation page for a flight booking international company<br/>
+                    <a href="./work/Versal/index.html">view template</a>
+                  </p>
+                </div>
+              </div>
+              <div class="px-3 pt-3 custom-2">
+                <img src = './media/Screenshot (189).png' />
+                <div class="pt-3">
+                  <p>
+                    <b>Memorable Global resources</b><br/>
+                    I built the landing page for a logistics copany<br/>
+                    <a href="./work/memorableglobalresources/index.html">view template</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2 class="mb-4 pb-2 underline mt-5">Skills</h2>
+            <section class="custom-3 grid gap-4 justify-items-center text-center">
+              <div>
+                <img src="./media/HTML5_Badge.svg" />
+                <p>HTML</p>
+              </div>
+              <div>
+                <img src="./media/CSS3_logo.svg" />
+                <p>CSS</p>
+              </div>
+              <div>
+                <img src="./media/Unofficial_JavaScript_logo_2.svg" />
+                <p>Javascript</p>
+              </div>
+              <div>
+                <img src="./media/node-js.svg" />
+                <p>NodeJs</p>
+              </div>
+              <div>
+                <img src="./media/React-icon.svg" />
+                <p>React</p>
+              </div>
+              <div>
+                <img src="./media/Postgresql_elephant.svg" />
+                <p>Postgres</p>
+              </div>
+            </section>
+          </section>
+        </section>
+        <section class="white px-4 py-5 pri-bg" id="work">
+          <div class="grid two-col mx-auto mw-1080 align-items-end gap-4">
+              <section class="">
+                  <h2 class="font-weight-bold h2 display-2">Work with Me</h2>
+                  <p>
+                  Wether you need a high-converting landing page, a modern redesign of your outdated website, or a powerful, custom-built web application, I can help bring your vision to life.<br/>Fill this form to get in touch, let us build something remarkable together.
+                  </p>
+              </section>
+              <form class="bg-white px-5 py-4 rounded" action="mailto:iamdavonokeke@gmail.com">
+                <div class="form-group mt-2">
+                  <input type="text" class="form-control py-2" required  name='name' placeholder="Name/Company Name">
+                </div>
+                  <div class="form-group mt-2">
+                    <input type="email" class="form-control py-2" required name="email" placeholder="Email adress">
+                  </div>
+                  <div class="form-group mt-2">
+                    <textarea type="text" class="form-control py-4" required name="message" placeholder="Your message"></textarea>
+                  </div> 
+                  <button type="submit" class="btn btn-block submit mt-2 pri-bg white w-100">Continue</button>
+                </form>
+          </div>
+      </section>
+      </main>
+    <div class='footer grey-bg pt-4'>
+      <div class="mw-1080 mx-auto text-center white ">
+        <div class='pb-3'>
+          <a class='me-3 white' href='/'>Home</a>
+          <a class='me-3 white' href='https://frontendokeke.hashnode.dev'>Blog</a>
+          <a class='me-3 white' href='https://linkedin.com/in/iamdavidokeke'>LinkedIn</a>
+          <a class='me-3 white' href='mailto:iamdavonokeke@gmail.com'>Mail</a>
+          <a class='me-3 white' href='https://github.com/iamdavidokeke'>Github</a>
+        </div>
+        <small class='mb-0 pb-0 grey'>David Okeke 2025</small>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  <script>
+    function openMobileMenu(){
+      document.getElementById('mobile-menu').classList.toggle('hide')
+    }
+  </script>
+</body>
+
+</html>
